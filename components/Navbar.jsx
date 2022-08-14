@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="relative">
       {" "}
-      <nav className=" w-full mx-auto fixed h-10 border border-gray-400 flex flex-row justify-between items-center px-10 py-7 text-white">
+      <nav className=" w-full mx-auto fixed h-10 border border-gray-400 flex flex-row justify-between items-center px-10 py-7 text-white z-999">
         <div>
           <Link href="/">
             <p className="font-bold cursor-pointer">Hime.Dev</p>
