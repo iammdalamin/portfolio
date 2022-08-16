@@ -40,3 +40,16 @@ html {
   background: #000;
   background-size: cover;
 }
+
+.anime-ico {
+  animation: anime-ico 1s infinite ease-in-out alternate;
+}
+
+@keyframes anime-ico {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}

@@ -23,7 +23,7 @@ const Hero = () => {
               alt=""
               width="550px"
               height="550px"
-              className="rounded-full bg-cover sm:w-[350px] sm:h-[350px]"
+              className="rounded-full bg-cover sm:w-[350px] sm:h-[350px] z-[-1]"
             />
           </div>
         </div>
