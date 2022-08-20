@@ -4,15 +4,15 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
-    <div className="flex  items-center justify-center  h-screen px-16 py-24 md:px-12 custom-bg">
-      <div className="max-w-[1240px] w-full h-full flex flex-col md:flex-row justify-between text-white">
+    <div className="flex  items-center justify-center  h-screen  custom-bg">
+      <div className="container flex flex-col md:flex-row justify-between text-white px-16 py-24 md:px-12">
         <div className="my-auto">
-          <h2 className="font-bold text-4xl md:text-6xl  font-sans">
+          <h2 className="font-bold text-4xl  md:text-6xl md:leading-[92px] font-sans ">
             I'M
-            <span className="text-yellow-500 text-8xl">
+            <span className="text-yellow-500 text-6xl ">
               <Typewriter
                 options={{
-                  strings: ["Al-Amin"],
+                  strings: ["Al-Amin", "ReactJS Developer"],
                   autoStart: true,
                   loop: true,
                   cursorStyle: ".",
@@ -36,8 +36,8 @@ const Hero = () => {
           /> */}
         <Image
           src="/../public/assets/hero.jpg"
-          width="350px"
-          height="350px"
+          width={500}
+          height={500}
           alt=""
           className="rounded-full max-w-[550px] max-h-[550px]"
         />
