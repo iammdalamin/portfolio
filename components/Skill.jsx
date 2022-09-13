@@ -69,10 +69,10 @@ const Skill = () => {
 
   console.log(skills);
   return (
-    <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500">
+    <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 anime-bg">
       <div className="container mx-auto py-24  flex flex-col items-center justify-center ">
         <div>
-          <h2 className="px-4 py-6 mb-6 text-yellow-500 text-4xl md:text-6xl ">
+          <h2 className="px-4 py-6 mb-6 text-white text-4xl md:text-6xl ">
             My Skills
           </h2>
         </div>

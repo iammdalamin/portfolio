@@ -4,12 +4,12 @@ import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
-    <div className="flex  items-center justify-center  h-screen  bg-gradient-to-r from-violet-500 to-fuchsia-500 py-[30rem] md:p-0">
+    <div className="flex  items-center justify-center  h-screen  bg-gradient-to-r from-violet-500 to-fuchsia-500  anime-bg py-[30rem] md:p-0">
       <div className="container flex flex-col md:flex-row justify-between text-white px-16 py-24 md:px-12">
-        <div className="my-auto">
+        <div className="my-auto pb-10">
           <h2 className="font-bold text-4xl  md:text-6xl md:leading-[92px] font-sans ">
-            I'M
-            <span className="text-yellow-500 text-6xl ">
+            Im
+            <span className="text-slate-800	text-4xl	 md:text-6xl ">
               <Typewriter
                 options={{
                   strings: ["Al-Amin", "ReactJS Developer"],
@@ -20,7 +20,7 @@ const Hero = () => {
               />
             </span>
           </h2>
-          <button className="border px-6 py-2 md:px-10 md:py-3 mt-6 md:mt-10 font-bold text-sm md:text-l tracking-widest  rounded-2xl uppercase text-black bg-yellow-500 hover:bg-black hover:text-yellow-500 hover:border ease-in-out duration-500">
+          <button className=" px-6 py-2 md:px-10 md:py-3 mt-6 md:mt-10 font-bold text-sm md:text-l tracking-widest  rounded-2xl uppercase text-black bg-white hover:bg-black hover:text-white hover: ease-in-out duration-500">
             Projects
           </button>
         </div>
@@ -34,7 +34,7 @@ const Hero = () => {
             className="rounded-full sm:w-[350px] sm:h-[350px] sm:mt-4 md:w-full md:h-full z-[1]"
           /> */}
         <div
-          className="border-4 border-white rounded-full flex justify-center "
+          className="rounded-full shadow-2xl flex justify-center "
           width={500}
           height={500}
         >

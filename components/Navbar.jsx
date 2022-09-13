@@ -73,7 +73,7 @@ const Navbar = () => {
           className={
             nav
               ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in-out duration-500 z-10"
-              : "fixed left-[-100%] h-screen w-full  top-0 p-10 ease-in duration-500"
+              : "fixed left-[-100%] h-screen w-full  top-0 p-10 z-10 ease-in-out duration-500"
           }
         >
           <div className="flex justify-between items-center w-full">
