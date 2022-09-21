@@ -29,7 +29,7 @@ const Navbar = () => {
       <nav
         className={
           shadow
-            ? `w-full mx-auto fixed h-10 border border-gray-400 flex flex-row justify-between items-center px-10 py-7 text-white z-[9999999] shadow-xl bg-[#414141] ease-in-out duration-500`
+            ? `w-full mx-auto fixed h-10 border border-gray-400 flex flex-row justify-between items-center px-10 py-7 text-white z-[9999999] shadow-xl bg-transparent backdrop-blur-sm	 ease-in-out duration-500`
             : `w-full mx-auto fixed h-10 border border-gray-400 flex flex-row justify-between items-center px-10 py-7 text-white z-[9999999]`
         }
       >
@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
         <div>
           <ul className="hidden md:flex justify-between items-center flex-wrap ">
-            <li className="nav-link px-3 hover:border-b border-[#FEC60A]">
+            <li className="nav-link px-3 hover:border-b border-[#FEC60A] ">
               <Link href="/">Home</Link>
             </li>
             <li className="nav-link px-3 hover:border-b border-[#FEC60A]">

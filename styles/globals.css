@@ -54,7 +54,7 @@ html {
 }
 
 .anime-bg {
-  animation: gradient 15s ease infinite;
+  animation: gradient 5s ease infinite;
   background-size: 400%;
 }
 

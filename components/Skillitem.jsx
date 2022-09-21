@@ -5,7 +5,7 @@ const Skillitem = ({ name, img }) => {
   console.log(name);
   return (
     <div
-      className=" bg-white shadow-2xl
+      className=" bg-white  shadow-2xl
 
     m-5 p-8 text-center w-[250px] h-[200px] items-center rounded-xl cursor-pointer"
     >
