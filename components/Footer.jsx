@@ -2,7 +2,7 @@ import React from "react";
 import SocialIcons from "./SocialIcons";
 const Footer = () => {
   return (
-    <div className="flex justify-center py-6 relative">
+    <div className="flex flex-col  items-center justify-center py-6 relative">
       <SocialIcons />
       <br />
       <span className="block font-light text-sm text-[#a8b2d1]">
