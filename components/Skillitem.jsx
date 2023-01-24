@@ -9,7 +9,13 @@ const Skillitem = ({ name, img }) => {
 
     m-5 p-8 text-center w-[250px] h-[200px] items-center rounded-xl cursor-pointer"
     >
-      <Image src={img} alt={name} width={80} height={80} />
+      <Image
+        src={img}
+        alt={name}
+        width={80}
+        height={80}
+        className="object-contain"
+      />
       <h1 className="mt-5 text-slate-600 text-2xl md:text-3xl">{name}</h1>
     </div>
   );

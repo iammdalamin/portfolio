@@ -31,10 +31,10 @@ const Testimonial = () => {
     },
   ];
   return (
-    <div className="bg-white">
+    <div>
       <div className="container mx-auto py-24  flex flex-col items-center justify-center ">
         <div>
-          <h2 className="px-4 py-6 mb-6 text-slate-700 text-4xl md:text-6xl ">
+          <h2 className="section-title px-4 py-6 mb-6  text-4xl md:text-6xl ">
             Testimonial
           </h2>
           <div className="flex flex-col md:flex-row">
@@ -43,17 +43,17 @@ const Testimonial = () => {
               return (
                 <motion.div
                   key={id}
-                  className="text-center shadow hover:shadow-2xl rounded-2xl m-4 overflow-hidden p-6"
+                  className="text-center shadow-2xl rounded-2xl m-4 overflow-hidden p-6"
                 >
                   <Image
                     src={img}
                     alt={name}
                     width={150}
                     height={150}
-                    className="rounded-full"
+                    className="rounded-full object-cover"
                   />
 
-                  <h3 className="text-xl mt-2">{name}</h3>
+                  <h3 className="text-xl mt-2 section-title">{name}</h3>
                   <BsChatSquareQuote size={25} className="mx-auto mb-5" />
 
                   <p>{quotes}</p>

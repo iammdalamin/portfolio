@@ -6,20 +6,21 @@ const About = () => {
       id="about"
       className="container mx-auto px-10 py-24 flex flex-col justify-start"
     >
-      <div className="w-20">
-        <h2 className="px-4 py-6 mb-6 text-4xl md:text-6xl border-double border-b-[6px] border-yellow-500">
-          About
-        </h2>
-      </div>
+      <h2 className="section-title  py-6 mb-6 text-4xl md:text-6xl ">
+        About Me
+      </h2>
 
       <p className="max-w-[1200px] text-xl leading-8 ">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
-        reiciendis voluptatum, nam dolor tempore a nihil consequatur repellat
-        aspernatur quos vel praesentium voluptate ea natus. Sequi eligendi
-        doloribus sed iusto. Quia sequi illum labore ipsa quae aliquid
-        voluptatum dolores, reiciendis iusto aliquam? Voluptate facilis
-        blanditiis libero esse eligendi commodi expedita perferendis aspernatur
-        cumque eveniet, asperiores veniam ex quo quam hic.
+        Hello! My name is Brittany and I enjoy creating things that live on the
+        internet. My interest in web development started back in 2012 when I
+        decided to try editing custom Tumblr themes — turns out hacking together
+        a custom reblog button taught me a lot about HTML & CSS! Fast-forward to
+        today, and I’ve had the privilege of working at an advertising agency, a
+        start-up, a huge corporation, and a student-led design studio. My main
+        focus these days is building accessible, inclusive products and digital
+        experiences at Upstatement for a variety of clients. I also recently
+        launched a course that covers everything you need to build a web app
+        with the Spotify API using Node & React.
       </p>
     </div>
   );

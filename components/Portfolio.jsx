@@ -1,7 +1,10 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const Portfolio = () => {
+  const [selectedId, setSelectedId] = useState(null);
+
   const projects = [
     {
       id: 1,
@@ -47,10 +50,10 @@ const Portfolio = () => {
     },
   ];
   return (
-    <div>
+    <div id="projects">
       <div className="container mx-auto py-24  flex flex-col items-center justify-center">
         <div>
-          <h2 className="px-4 py-6 mb-6 text-slate-700 text-4xl md:text-6xl ">
+          <h2 className="section-title px-4 py-6 mb-6 text-4xl md:text-6xl ">
             Portfolio
           </h2>
         </div>
@@ -58,16 +61,19 @@ const Portfolio = () => {
           {projects.map((project, id) => {
             const { name, img, url } = project;
             return (
-              <div
+              <motion.div
+                transition={{
+                  duration: 500,
+                }}
                 key={id}
                 className="text-center shadow hover:shadow-2xl rounded-2xl m-4 overflow-hidden cursor duration-500 ease-in "
               >
                 {" "}
-                <a href={url} target="_blank" rel="noreferrer">
-                  <Image src={img} alt={name} width={350} height={220} />
-                  <h3 className="text-xl p-5  duration-700 ease-in">{name}</h3>
-                </a>
-              </div>
+                <Image src={img} alt={name} width={350} height={220} />
+                <motion.h3 className=" section-title text-xl p-5  duration-700 ease-in">
+                  {name}
+                </motion.h3>
+              </motion.div>
             );
           })}
         </div>

@@ -58,6 +58,21 @@ const skillItems = [
     name: "Github",
     img: "https://i.postimg.cc/C5N4hc4S/github-icon.png",
   },
+  {
+    id: "11",
+    name: "Github",
+    img: "https://i.postimg.cc/3JXdc6nm/nodejs-1-logo-png-transparent.png",
+  },
+  {
+    id: "11",
+    name: "Github",
+    img: "https://i.postimg.cc/C5N4hc4S/github-icon.png",
+  },
+  {
+    id: "11",
+    name: "Github",
+    img: "https://i.postimg.cc/C5N4hc4S/github-icon.png",
+  },
 ];
 
 const Skill = () => {
@@ -69,10 +84,10 @@ const Skill = () => {
 
   console.log(skills);
   return (
-    <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 anime-bg">
+    <>
       <div className="container mx-auto py-24  flex flex-col items-center justify-center ">
         <div>
-          <h2 className="px-4 py-6 mb-6 text-white text-4xl md:text-6xl ">
+          <h2 className="section-title px-4 py-6 mb-6  text-4xl md:text-6xl ">
             My Skills
           </h2>
         </div>
@@ -89,7 +104,7 @@ const Skill = () => {
           })}
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

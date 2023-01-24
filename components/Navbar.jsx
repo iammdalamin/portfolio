@@ -5,7 +5,7 @@ import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const style = {
   navbar: `w-full mx-auto fixed h-10 border border-gray-400 flex flex-row justify-between items-center px-10 py-7 text-white z-[9999999]`,
-  navTitle: `font-bold cursor-pointer`,
+  // navTitle: shadow ? `font-bold cursor-pointer text-violet-500` : `text-white `,
 };
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -16,7 +16,7 @@ const Navbar = () => {
   };
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 60) {
+      if (window.scrollY >= 90) {
         setShadow(true);
       } else {
         setShadow(false);
@@ -29,13 +29,15 @@ const Navbar = () => {
       <nav
         className={
           shadow
-            ? `w-full mx-auto fixed h-10 border border-gray-400 flex flex-row justify-between items-center px-10 py-7 text-white z-[9999999] shadow-xl bg-transparent backdrop-blur-sm	 ease-in-out duration-500`
-            : `w-full mx-auto fixed h-10 border border-gray-400 flex flex-row justify-between items-center px-10 py-7 text-white z-[9999999]`
+            ? `w-full mx-auto fixed h-10  flex flex-row justify-between items-center px-10 py-7  z-[9999999] shadow-xl bg-[#0a192f] text-white	 ease-in-out duration-500`
+            : `w-full mx-auto fixed h-10   flex flex-row justify-between items-center px-10 py-7 text-white z-[9999999]`
         }
       >
         <div>
           <Link href="/">
-            <p className={style.navTitle}>Hime.Dev</p>
+            <p className={`font-bold cursor-pointer text-[#64ffda]`}>
+              Himu.Dev
+            </p>
           </Link>
         </div>
         <div>
@@ -44,7 +46,7 @@ const Navbar = () => {
               <Link href="/">Home</Link>
             </li>
             <li className="nav-link px-3 hover:border-b border-[#FEC60A]">
-              <Link href="/">Projects</Link>
+              <Link href="/#projects">Projectss</Link>
             </li>
             <li className="nav-link px-3 hover:border-b border-[#FEC60A]">
               <Link href="/#about">About</Link>
@@ -105,7 +107,7 @@ const Navbar = () => {
                 className="nav-link py-5 font-bold"
                 onClick={() => handleNav(false)}
               >
-                <Link href="/">Projects</Link>
+                <Link href="/#projects">Projects</Link>
               </li>
 
               <li
