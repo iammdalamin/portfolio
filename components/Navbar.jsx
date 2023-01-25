@@ -16,7 +16,7 @@ const Navbar = () => {
   };
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 90) {
+      if (window.scrollY >= 60) {
         setShadow(true);
       } else {
         setShadow(false);
@@ -29,8 +29,8 @@ const Navbar = () => {
       <nav
         className={
           shadow
-            ? `w-full mx-auto fixed h-10  flex flex-row justify-between items-center px-10 py-7  z-[9999999] shadow-xl bg-[#0a192f] text-white	 ease-in-out duration-500`
-            : `w-full mx-auto fixed h-10   flex flex-row justify-between items-center px-10 py-7 text-white z-[9999999]`
+            ? `w-full mx-auto fixed h-15  flex flex-row justify-between items-center px-10 py-7  z-10 shadow-xl bg-[#0a192f] text-white	 ease-in-out duration-500`
+            : `w-full mx-auto fixed h-15   flex flex-row justify-between items-center px-10 py-7 text-white z-10`
         }
       >
         <div>
@@ -42,16 +42,16 @@ const Navbar = () => {
         </div>
         <div>
           <ul className="hidden md:flex justify-between items-center flex-wrap ">
-            <li className="nav-link px-3 hover:border-b border-[#FEC60A] ">
+            <li className="nav-link px-3 hover:text-[#64ffda] ">
               <Link href="/">Home</Link>
             </li>
-            <li className="nav-link px-3 hover:border-b border-[#FEC60A]">
+            <li className="nav-link px-3 hover:text-[#64ffda]">
               <Link href="/#projects">Projectss</Link>
             </li>
-            <li className="nav-link px-3 hover:border-b border-[#FEC60A]">
+            <li className="nav-link px-3 hover:text-[#64ffda]">
               <Link href="/#about">About</Link>
             </li>
-            <li className="nav-link px-3 hover:border-b border-[#FEC60A]">
+            <li className="nav-link px-3 hover:text-[#64ffda]">
               <Link href="/">Contact</Link>
             </li>
           </ul>
@@ -74,7 +74,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in-out duration-500 z-10"
+              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#64ffda] p-10 ease-in-out duration-500 z-10"
               : "fixed left-[-100%] h-screen w-full  top-0 p-10 z-10 ease-in-out duration-500"
           }
         >

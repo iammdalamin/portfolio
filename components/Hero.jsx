@@ -2,17 +2,19 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="flex  items-center justify-center  h-screen  bg-[#0A192F]   anime-bg py-[30rem] md:p-0">
-      <div className="container flex flex-col md:flex-row justify-between text-white px-16 py-24 md:px-12">
+    <div className="flex  items-center justify-center  h-screen md:h-screen  bg-[#0A192F]  py-[30rem] md:p-0">
+      <div className="container flex flex-col md:flex-row justify-between text-white px-10 py-24 md:px-12">
         <div className="my-auto pb-10 w-100 md:w-[80%]">
-          <span className="text-[#64ffda] mb-8">Hi, my name is</span>
+          <span className="text-[#64ffda] mb-8 text-lg md:text-xl">
+            Hi, my name is
+          </span>
           <h2 className="text-[#ccd6f6]	font-bold text-4xl  md:text-6xl md:leading-[1.1] font-sans ">
             Md. Al-Amin
           </h2>
           <h2 className="text-[#8892b0]	font-bold text-4xl  md:text-6xl md:leading-[92px] font-sans leading-[1.1]	">
             I build things for the web.
           </h2>
-          <p className="block text-sm md:text-lg w-100 md:w-[65%] leading-6">
+          <p className="block text-md md:text-lg w-100 md:w-[65%] leading-6">
             I’m a software engineer specializing in building (and occasionally
             designing) exceptional digital experiences. Currently, I’m focused
             on building accessible, human-centered products at Upstatement.

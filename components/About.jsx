@@ -6,7 +6,7 @@ const About = () => {
       id="about"
       className="container mx-auto px-10 py-24 flex flex-col justify-start"
     >
-      <h2 className="section-title  py-6 mb-6 text-4xl md:text-6xl ">
+      <h2 className="section-title  py-3 mb-6 text-4xl md:text-6xl ">
         About Me
       </h2>
 

@@ -7,7 +7,7 @@ const Skillitem = ({ name, img }) => {
     <div
       className=" bg-white  shadow-2xl
 
-    m-5 p-8 text-center w-[250px] h-[200px] items-center rounded-xl cursor-pointer"
+    m-5 p-8 text-center w-[200px] h-[200px] items-center rounded-xl cursor-pointer"
     >
       <Image
         src={img}
@@ -16,7 +16,7 @@ const Skillitem = ({ name, img }) => {
         height={80}
         className="object-contain"
       />
-      <h1 className="mt-5 text-slate-600 text-2xl md:text-3xl">{name}</h1>
+      <h1 className="mt-5 text-slate-600 text-xl md:text-2xl">{name}</h1>
     </div>
   );
 };
