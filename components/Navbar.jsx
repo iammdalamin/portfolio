@@ -74,17 +74,17 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#64ffda] p-10 ease-in-out duration-500 z-10"
+              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#0a192f] p-10 ease-in-out duration-500 z-10"
               : "fixed left-[-100%] h-screen w-full  top-0 p-10 z-10 ease-in-out duration-500"
           }
         >
-          <div className="flex justify-between items-center w-full">
+          <div className="flex justify-between items-center w-full text-white">
             <Link href="/">
               <p className="font-bold cursor-pointer">Hime.Dev</p>
             </Link>
             <div
               onClick={handleNav}
-              className="border border-black rounded-full p-2 cursor-pointer block"
+              className="border-2  rounded-full p-2 cursor-pointer block"
             >
               <AiOutlineClose size={20} />
             </div>
@@ -97,53 +97,53 @@ const Navbar = () => {
           <div>
             <ul className="flex flex-col md:hidden justify-start items-start flex-wrap w-full">
               <li
-                className="nav-link py-5 font-bold"
+                className="nav-link py-5 font-bold text-white"
                 onClick={() => handleNav(false)}
               >
                 <Link href="/">Home</Link>
               </li>
 
               <li
-                className="nav-link py-5 font-bold"
+                className="nav-link py-5 font-bold text-white"
                 onClick={() => handleNav(false)}
               >
                 <Link href="/#projects">Projects</Link>
               </li>
 
               <li
-                className="nav-link py-5 font-bold"
+                className="nav-link py-5 font-bold text-white"
                 onClick={() => handleNav(false)}
               >
                 <Link href="/#about">About</Link>
               </li>
 
               <li
-                className="nav-link py-5 font-bold"
+                className="nav-link py-5 font-bold text-white"
                 onClick={() => handleNav(false)}
               >
                 <Link href="/">Contact</Link>
               </li>
             </ul>
           </div>
-          <div className="mt-10">
+          <div className="w-[65%] absolute bottom-2.5">
             <ul className="flex justify-between">
-              <li className="border border-black rounded-full p-3 bg-black text-yellow-500 shadow-xl hover:bg-yellow-500 hover:text-black anime-ico">
+              <li className="border  rounded-full p-3 bg-white text-[#0a192f] shadow-xl ease-in-out transition-all duration-700 hover:bg-[#0a192f] hover:text-white hover:scale-125">
                 <Link href="/">
                   <FaFacebookF size={18} />
                 </Link>
               </li>
-              <li className="border border-black rounded-full p-3 bg-black text-yellow-500 shadow-xl hover:bg-yellow-500 hover:text-black anime-ico">
+              <li className="border  rounded-full p-3 bg-white text-[#0a192f] shadow-xl ease-in-out transition-all duration-700 hover:bg-[#0a192f] hover:text-white hover:scale-125">
                 <Link href="/">
                   <FaLinkedinIn size={18} />
                 </Link>
               </li>
 
-              <li className="border border-black rounded-full p-3 bg-black text-yellow-500 shadow-xl hover:bg-yellow-500 hover:text-black anime-ico">
+              <li className="border  rounded-full p-3 bg-white text-[#0a192f] shadow-xl ease-in-out transition-all duration-700 hover:bg-[#0a192f] hover:text-white hover:scale-125">
                 <Link href="/">
                   <FaGithub size={18} />
                 </Link>
               </li>
-              <li className="border border-black rounded-full p-3 bg-black text-yellow-500 shadow-xl hover:bg-yellow-500 hover:text-black anime-ico">
+              <li className="border  rounded-full p-3 bg-white text-[#0a192f] shadow-xl ease-in-out transition-all duration-700 hover:bg-[#0a192f] hover:text-white hover:scale-125 ">
                 <Link href="/">
                   <FaGithub size={18} />
                 </Link>

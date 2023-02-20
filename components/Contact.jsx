@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div className="flex flex-col items-center justify-center  py-24 ">
       <h1 className="section-title">Get in touch!</h1>
-      <p className="w-full md:w-[40%] text-center">
+      <p className="w-[75%] md:w-[40%]  text-center">
         Although I’m not currently looking for any new opportunities, my inbox
         is always open. Whether you have a question or just want to say hi, I’ll
         try my best to get back to you!

@@ -10,7 +10,7 @@ const About = () => {
         About Me
       </h2>
 
-      <p className="max-w-[1200px] text-xl leading-8 ">
+      <p className="max-w-[1200px]  md:text-xl text-lg leading-8 ">
         Hello! My name is Brittany and I enjoy creating things that live on the
         internet. My interest in web development started back in 2012 when I
         decided to try editing custom Tumblr themes — turns out hacking together
