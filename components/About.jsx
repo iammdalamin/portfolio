@@ -9,7 +9,6 @@ const About = () => {
       <h2 className="section-title  py-3 mb-6 text-4xl md:text-6xl ">
         About Me
       </h2>
-
       <p className="max-w-[1200px]  md:text-xl text-lg leading-8 ">
         Hello! My name is Brittany and I enjoy creating things that live on the
         internet. My interest in web development started back in 2012 when I
