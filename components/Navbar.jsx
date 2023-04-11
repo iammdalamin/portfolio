@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
@@ -25,7 +26,18 @@ const Navbar = () => {
     window.addEventListener("scroll", handleShadow);
   }, []);
   return (
-    <div className="relative">
+    <motion.div
+      initial={{
+        y: -100,
+      }}
+      animate={{
+        y: 0,
+      }}
+      transition={{
+        duration: 0.9,
+      }}
+      className="relative"
+    >
       <nav
         className={
           shadow
@@ -152,7 +164,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

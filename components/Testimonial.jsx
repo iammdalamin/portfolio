@@ -4,7 +4,7 @@ import React from "react";
 import { BsChatSquareQuote } from "react-icons/bs";
 
 const Testimonial = () => {
-  const tmonials = [
+  const testimonials = [
     {
       name: "John Drew",
       img: "https://i.postimg.cc/9QfbsQ1f/pexels-italo-melo-2379004.jpg",
@@ -38,10 +38,11 @@ const Testimonial = () => {
             Testimonial
           </h2>
           <div className="flex flex-col md:flex-row">
-            {tmonials.map((tmonial, id) => {
+            {testimonials.map((tmonial, id) => {
               const { name, img, quotes } = tmonial;
               return (
                 <motion.div
+                  initial={{}}
                   key={id}
                   className="text-center shadow-2xl rounded-2xl m-4 overflow-hidden p-6"
                 >
